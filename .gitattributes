@@ -1,0 +1,6 @@
+* text eol=lf
+
+*.cs test
+*.md text
+
+*.png binary
