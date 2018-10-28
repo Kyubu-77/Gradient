@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EADBDB26-A8D8-447E-8020-4C43FE046422}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LED_Planer</RootNamespace>
+    <AssemblyName>LED_Planer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\RuleSet1.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Anchor.cs" />
+    <Compile Include="Data\EnumAnchorPosCalcAlgo.cs" />
+    <Compile Include="Data\EnumSegmentKind.cs" />
+    <Compile Include="ListboxEntries\PointGridHandler.cs" />
+    <Compile Include="Utils\Bezier.cs" />
+    <Compile Include="Graphics\Camera.cs" />
+    <Compile Include="Graphics\ShowGradient.cs" />
+    <Compile Include="ListboxEntries\ComboSegmentType.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Data\Curve.cs" />
+    <Compile Include="Graphics\GraphViewPlugin.cs" />
+    <Compile Include="ListboxEntries\ComboKeyInfo.cs" />
+    <Compile Include="Binding\IMovable.cs" />
+    <Compile Include="Binding\ISelectable.cs" />
+    <Compile Include="Form\MouseStatus.cs" />
+    <Compile Include="Form\Options.cs" />
+    <Compile Include="Data\SegmentInfoBezier.cs" />
+    <Compile Include="Form\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmColorControlHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmGradientControlHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmGradientPointControlHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\GraphViewHandler.cs" />
+    <Compile Include="Graphics\Graph.cs" />
+    <Compile Include="Data\Key.cs" />
+    <Compile Include="Data\SegmentInfoUseLeft.cs" />
+    <Compile Include="Data\SegmentInfoLinear.cs" />
+    <Compile Include="Data\Gradient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\SegmentInfoUseRight.cs" />
+    <Compile Include="Data\SegmentInfo.cs" />
+    <Compile Include="Form\SelectInformation.cs" />
+    <Compile Include="Data\Side.cs" />
+    <Compile Include="Utils\XmlProcessor.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradient", "Source_Gradient\Gradient.csproj", "{EADBDB26-A8D8-447E-8020-4C43FE046422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EADBDB26-A8D8-447E-8020-4C43FE046422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADBDB26-A8D8-447E-8020-4C43FE046422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADBDB26-A8D8-447E-8020-4C43FE046422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADBDB26-A8D8-447E-8020-4C43FE046422}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12633E9F-3F88-4A9C-A05C-66363F66E388}
+	EndGlobalSection
+EndGlobal
