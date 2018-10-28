@@ -84,6 +84,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnCameraReset = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picGraph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGradientPointColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRed)).BeginInit();
@@ -290,7 +291,7 @@
             this.btnNewGradient.Name = "btnNewGradient";
             this.btnNewGradient.Size = new System.Drawing.Size(227, 37);
             this.btnNewGradient.TabIndex = 2;
-            this.btnNewGradient.Text = "new Pallette";
+            this.btnNewGradient.Text = "new Gradient";
             this.btnNewGradient.UseVisualStyleBackColor = true;
             this.btnNewGradient.Click += new System.EventHandler(this.btnNewGradient_Click);
             // 
@@ -588,7 +589,7 @@
             this.groupBox1.Controls.Add(this.txtV_MainLineEveryXth);
             this.groupBox1.Controls.Add(this.txtV_GridSpace);
             this.groupBox1.Controls.Add(this.txtH_MainLineEveryXth);
-            this.groupBox1.Location = new System.Drawing.Point(12, 215);
+            this.groupBox1.Location = new System.Drawing.Point(12, 297);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 355);
             this.groupBox1.TabIndex = 16;
@@ -667,7 +668,7 @@
             this.groupBox2.Controls.Add(this.cbxAllowSelectingAnchors);
             this.groupBox2.Controls.Add(this.cbxShowAnchors);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(12, 129);
+            this.groupBox2.Location = new System.Drawing.Point(12, 211);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(227, 80);
             this.groupBox2.TabIndex = 17;
@@ -698,7 +699,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(12, 576);
+            this.btnSave.Location = new System.Drawing.Point(12, 128);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 35);
             this.btnSave.TabIndex = 18;
@@ -708,7 +709,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(130, 576);
+            this.btnLoad.Location = new System.Drawing.Point(130, 129);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(109, 34);
             this.btnLoad.TabIndex = 19;
@@ -727,6 +728,16 @@
             this.btnCameraReset.UseVisualStyleBackColor = true;
             this.btnCameraReset.Click += new System.EventHandler(this.btnCameraReset_Click);
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(12, 169);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(227, 37);
+            this.btnExport.TabIndex = 2;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // FrmGradient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -738,6 +749,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnNewGradient);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnDeleteGradient);
             this.Controls.Add(this.cboGradients);
             this.Controls.Add(this.picGraph);
@@ -822,6 +834,7 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnCameraReset;
         private System.Windows.Forms.DataGridView grdPoints;
+        private System.Windows.Forms.Button btnExport;
     }
 }
 

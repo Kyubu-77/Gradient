@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace LED_Planer
 {
 
-    public partial class FrmGradient : Form
+    public partial class FrmGradient :  Form
     {
         // Get
         Data.Gradient getCurrentGradient()
@@ -188,6 +187,14 @@ namespace LED_Planer
             cboGradients.Items.Remove(point);
             cboGradients.Items.Add(point);
             cboGradients.SelectedItem = entry;
+        }
+
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            FrmExport x = new FrmExport();
+            x.SetGradient(this.getCurrentGradient());
+            x.ShowDialog();
         }
     }
 }

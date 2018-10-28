@@ -314,6 +314,8 @@ namespace LED_Planer
                 grdPoints.Rows[i].Cells[e.ColumnIndex].Selected = targetSelectd;
             }
         }
+
+
     }
 }
 

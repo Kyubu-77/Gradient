@@ -31,9 +31,12 @@ namespace LED_Planer
         public static Vector2 lu = new Vector2(0f, 0f);
         public static Vector2 ro = new Vector2(1f, 1f);
         public static int ColorBandSteps = 500;
+        public static float BezierSegmentSteps = 250;
 
         public static Brush BrushOne = new SolidBrush(Color.White);
         public static Brush BrushMany = new SolidBrush(Color.LightGray);
+
+        
     }
 }
 

@@ -56,7 +56,7 @@ namespace LED_Planer.Data
         public override void recalc()
         {
 
-            float stepWithOnXY = 1.0f / Constants.ColorBandSteps;
+            float stepWithOnXY = 1.0f / Constants.BezierSegmentSteps;
 
             float d4 = (right.Position.X - key.Position.X) / 4f;
 

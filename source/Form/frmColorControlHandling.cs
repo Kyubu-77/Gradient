@@ -57,5 +57,19 @@ namespace LED_Planer
             picGreen.Refresh();
             picBlue.Refresh(); 
         }
+ /*
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // FrmGradient
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "FrmGradient";
+            this.Load += new System.EventHandler(this.FrmGradient_Load);
+            this.ResumeLayout(false);
+
+        }*/
+
     }
 }
